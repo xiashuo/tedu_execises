@@ -9,10 +9,13 @@ import re
 list_words = []
 with open("dict.txt") as f:
     for line in f:
-        content=line.split()
-        word,mean = content[0],' '.join(content[1:])
+        # content=line.split()
+        # word,mean = content[0],' '.join(content[1:])
         # print(word,mean)
-        list_words.append((word, mean))
+        # list_words.append((word, mean))
+        content=re.findall(r"(\w+)\s+(.*)", line)
+        list_words.append(content[0])
+
 # print(list_words)
 db=pymysql.connect(
     host="localhost",
