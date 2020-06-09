@@ -8,7 +8,7 @@ while True:
     if word== "end":
         break
     res,addr=socketfd.recvfrom(1000)
-    print(f"含义：{res.decode()}")
+    print(res.decode())
 
 socketfd.close()
 
