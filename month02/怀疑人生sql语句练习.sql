@@ -124,3 +124,6 @@ SELECT DISTINCT Student.s_name FROM Student LEFT JOIN Score on Student.s_id=Scor
 
 # 14. 查询两门及其以上不及格课程的同学的学号，姓名及其平均成绩
 SELECT Student.s_id,Student.s_name,AVG(Score.s_score) FROM Student LEFT JOIN Score on Student.s_id=Score.s_id WHERE Score.s_id in (SELECT Score.s_id FROM Score WHERE Score.s_score<60 GROUP BY Score.s_id HAVING count(*)>=2) GROUP BY Student.s_id,Student.s_name;
+
+-- 15、检索"01"课程分数小于60，按分数降序排列的学生信息(asc升序 desc降序)
+SELECT student.*,score.c_id,score.s_score FROM student LEFT JOIN score on student.s_id=score.s_id WHERE score.c_id='01' and score.s_score<60 ORDER BY score.s_score;
