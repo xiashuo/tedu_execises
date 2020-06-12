@@ -126,4 +126,22 @@ SELECT DISTINCT Student.s_name FROM Student LEFT JOIN Score on Student.s_id=Scor
 SELECT Student.s_id,Student.s_name,AVG(Score.s_score) FROM Student LEFT JOIN Score on Student.s_id=Score.s_id WHERE Score.s_id in (SELECT Score.s_id FROM Score WHERE Score.s_score<60 GROUP BY Score.s_id HAVING count(*)>=2) GROUP BY Student.s_id,Student.s_name;
 
 -- 15、检索"01"课程分数小于60，按分数降序排列的学生信息(asc升序 desc降序)
-SELECT student.*,score.c_id,score.s_score FROM student LEFT JOIN score on student.s_id=score.s_id WHERE score.c_id='01' and score.s_score<60 ORDER BY score.s_score;
+SELECT student.*,score.c_id,score.s_score FROM student LEFT JOIN score on student.s_id=score.s_id WHERE
+score.c_id='01' and score.s_score<60 ORDER BY score.s_score;
+
+-- 16、按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩
+SELECT Student.s_id,Student.s_name 姓名,any_value(max(CASE WHEN c_id='01' THEN s_score ELSE NULL END)) 语文,any_value(max(CASE WHEN c_id='02' THEN s_score ELSE NULL END)) 数学,any_value(max(CASE WHEN c_id='03' THEN s_score ELSE NULL END)) 英语,any_value(max(CASE WHEN c_id='04' THEN s_score ELSE NULL END)) 物理,avg(Score.s_score) 平均成绩 FROM Student LEFT JOIN Score on Student.s_id=Score.s_id GROUP BY Student.s_id,Student.s_name ORDER BY AVG(Score.s_score) DESC;
+
+-- 17、查询各科成绩最高分、最低分和平均分：以如下形式显示：课程ID，课程name，最高分，最低分，平均分，及格率，中等率，优良率，优秀率 及格为>=60，中等为：70-80，优良为：80-90，优秀为：>=90
+ SELECT Course.c_id 课程id,Course.c_name 课程名,MAX(Score.s_score) 最高分,MIN(Score.s_score) 最低分,AVG(Score.s_score) 平均分,sum(case WHEN s_score>=60 THEN 1 ELSE 0 END)/count(s_score) 及格率,sum(case WHEN s_score>=70 and s_score<80 THEN 1 ELSE 0 END)/count(s_score) 中等率,sum(case WHEN s_score>=80 and s_score<90 THEN 1 ELSE 0 END)/count(s_score) 优良率,sum(case WHEN s_score>=90 THEN 1 ELSE 0 END)/count(s_score) 优秀率 FROM Course LEFT JOIN Score ON Course.c_id=Score.c_id GROUP BY Course.c_id,Course.c_name;
+
+-- 18 查询学生的总成绩并进行排名
+SELECT Student.s_id,Student.s_name,sum(s_score) FROM Student LEFT JOIN Score on Student.s_id=Score.s_id GROUP BY Student.s_id,Student.s_name ORDER BY sum(s_score) DESC;
+
+-- 19查询不同老师所教不同课程平均分从高到低显示
+SELECT Teacher.t_id 教师编号,Teacher.t_name 姓名,Course.c_name 课程名,avg(s_score) 平均分 FROM Teacher,Course,Score WHERE Teacher.t_id=Course.t_id and Course.c_id=Score.c_id GROUP BY Teacher.t_id,Teacher.t_name,Course.c_name ORDER BY avg(s_score);
+
+-- 20、查询所有课程的成绩第2名到第3名的学生信息及该课程成绩
+
+-- 21 统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比
+SELECT Course.c_id 课程id,Course.c_name 课程名,sum(case when s_score>=85 then 1 else 0 end)/count(s_score) '[100-85]',sum(case when s_score>=70 and s_score<85 then 1 else 0 end)/count(s_score) '[85-70]', sum(case when s_score>=60 and s_score<70 then 1 else 0 end)/count(s_score) '[70-60]',sum(case when s_score<60 then 1 else 0 end)/count(s_score) '[0-60]' FROM Course LEFT JOIN Score on Course.c_id=Score.c_id GROUP BY Course.c_id,Course.c_name;

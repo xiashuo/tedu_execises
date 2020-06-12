@@ -1,27 +1,31 @@
-from socket import *
-import time
+"""
+希望监听套接字同时连接着多个客户端，能同时和多个客户端交互
+重点代码
+"""
 
-# 创建套节字，不写参数默认也是tcp
-tcp_socket = socket(AF_INET, SOCK_STREAM)
+from socket import *
+
+# 创建TCP套接字 （不写参数默认也是tcp）
+tcp_socket = socket(AF_INET,SOCK_STREAM)
+
 # 绑定地址
-tcp_socket.bind(('0.0.0.0', 8888))
+tcp_socket.bind(('0.0.0.0',8888))
+
 # 设置监听
 tcp_socket.listen(3)
 
+# 等待客户端连接 (阻塞函数)
+while True:
+    print("Waiting for connect ....")
+    connfd,addr = tcp_socket.accept()
+    print("Connect from",addr)
 
-# 等待客户端连接（阻塞函数）
-print("等待连接。。。")
-connfd, addr = tcp_socket.accept()
-print(f"成功连接到:{addr}")
-file_name="%d-%d-%d.jpg"%time.localtime()[:3]
-with open(file_name,"wb") as f:
     # 收发消息
-    while True:
-        data = connfd.recv(1024*1024)
-        f.write(data)
-        if data=='##':
-            connfd.send("图片上传成功".encode())
-            break
-    connfd.close()
-    tcp_socket.close()
+    data = connfd.recv(1024)
+    print("收到:",data.decode())
+    connfd.send(b"Thanks")
 
+    connfd.close()
+
+# 关闭
+tcp_socket.close()
