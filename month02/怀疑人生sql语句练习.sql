@@ -145,3 +145,14 @@ SELECT Teacher.t_id 教师编号,Teacher.t_name 姓名,Course.c_name 课程名,a
 
 -- 21 统计各科成绩各分数段人数：课程编号,课程名称,[100-85],[85-70],[70-60],[0-60]及所占百分比
 SELECT Course.c_id 课程id,Course.c_name 课程名,sum(case when s_score>=85 then 1 else 0 end)/count(s_score) '[100-85]',sum(case when s_score>=70 and s_score<85 then 1 else 0 end)/count(s_score) '[85-70]', sum(case when s_score>=60 and s_score<70 then 1 else 0 end)/count(s_score) '[70-60]',sum(case when s_score<60 then 1 else 0 end)/count(s_score) '[0-60]' FROM Course LEFT JOIN Score on Course.c_id=Score.c_id GROUP BY Course.c_id,Course.c_name;
+
+-- -- 22、查询学生平均成绩及其名次
+-- SELECT c.*,@i:=@i+1 排名 FROM (SELECT a.s_id 学生编号,a.s_name 姓名,AVG(s_score) 平均成绩 FROM student a,score b WHERE a.s_id=b.s_id GROUP BY a.s_id,a.s_name ORDER BY AVG(s_score) DESC) c,(SELECT @i:=0) d;
+
+-- 23/查询各科成绩前三名的记录
+
+-- -- 24 查询出只有两门课程的全部学生的学号和姓名
+-- SELECT student.s_id 学号,student.s_name 姓名 FROM student LEFT JOIN score on student.s_id=score.s_id GROUP BY student.s_id,student.s_name HAVING count(c_id)=2;
+
+-- 25、查询男生、女生人数
+SELECT s_sex 性别,count(*) 人数 FROM student GROUP BY s_sex;
