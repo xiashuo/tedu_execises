@@ -156,3 +156,33 @@ SELECT Course.c_id 课程id,Course.c_name 课程名,sum(case when s_score>=85 th
 
 -- 25、查询男生、女生人数
 SELECT s_sex 性别,count(*) 人数 FROM student GROUP BY s_sex;
+
+-- -- 26、查询同名同性学生名单，并统计同名人数
+-- SELECT c.s_name 同名同姓学生,count(*) 人数 FROM (SELECT a.* from Student a WHERE (SELECT count(*) FROM Student b WHERE b.s_name=a.s_name) >1) c GROUP BY c.s_name;
+
+-- -- 27 查询课程名称为"数学"，且分数低于60的学生姓名和分数
+-- SELECT Student.s_name 数学分数低于60的学生,Score.s_score 分数 FROM Student,Course,Score WHERE Student.s_id=Score.s_id and Course.c_id=Score.c_id and Course.c_name='数学' and Score.s_score<60;
+
+-- -- 28 查询所有学生的课程及分数情况；
+-- SELECT Student.s_id 学号,Student.s_name 姓名,max(case when Course.c_name='语文' then s_score else null end) 语文, max(case when Course.c_name='数学' then s_score else null end) 数学,max(case when Course.c_name='英语' then s_score else null end) 英语,max(case when Course.c_name='物理' then s_score else null end) 物理 FROM Student,Course,Score WHERE Student.s_id=Score.s_id and Course.c_id=Score.c_id GROUP BY Student.s_id,Student.s_name;
+
+-- -- 29、查询任何一门课程成绩在70分以上的姓名、课程名称和分数；
+-- SELECT Student.s_name,Course.c_name,Score.s_score FROM Student,Course,Score WHERE Student.s_id=Score.s_id and Course.c_id=Score.c_id and Score.s_score>70;
+
+-- -- 30 查询不及格的课程
+-- SELECT Student.s_name,Course.c_name,Score.s_score FROM Student,Course,Score WHERE Student.s_id=Score.s_id and Course.c_id=Score.c_id and Score.s_score<60;
+
+-- 31查询课程编号为01且课程成绩在80分以上的学生的学号和姓名；
+SELECT Student.s_id 学号,Student.s_name 姓名 FROM Student LEFT JOIN Score on Student.s_id=Score.s_id WHERE Score.c_id='01' and Score.s_score>=80;
+
+-- 32 查询选修"张三"老师所授课程(可能有多个课程)的学生中，成绩最高的学生信息及其成绩
+
+
+-- 33查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩
+
+
+-- 34查询每门课程成绩最好的前两名
+
+
+-- 35、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列
+SELECT Score.c_id 课程号,count(*) FROM Score GROUP BY Score.c_id HAVING count(*)>5 ORDER BY count(*) DESC,Score.c_id;
