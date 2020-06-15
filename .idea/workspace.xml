@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month02/day13/chat_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/month02/day13/chat_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month02/exercises.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/month02/exercises.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month02/技术晨讲-向松.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day14/exercise01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -261,6 +263,7 @@
       <workItem from="1591709462149" duration="120000" />
       <workItem from="1592046750270" duration="7902000" />
       <workItem from="1592135010504" duration="7922000" />
+      <workItem from="1592230819155" duration="1481000" />
     </task>
     <servers />
   </component>
