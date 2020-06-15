@@ -23,12 +23,17 @@ def recv_msg(sock):
         recv, addr = sock.recvfrom(2048)
         print()
         print(recv.decode())
+        print("发言：",end="")
 
 
 def send_msg(sock, name):
     while True:
         print()
-        content = input()
+        try:
+            content = input("发言：")
+        except:
+            content="quit"
+
         if content == "quit":
             sock.sendto(f"quit,{name}".encode(),ADDR)
             sys.exit("您已退出群聊")
