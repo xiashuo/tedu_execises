@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month02/day15/ftp_clent.py" beforeDir="false" afterPath="$PROJECT_DIR$/month02/day15/ftp_clent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month02/day15/ftp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/month02/day15/ftp_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month02/6-21_deadline.py" beforeDir="false" afterPath="$PROJECT_DIR$/month02/6-21_deadline.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <recent name="$PROJECT_DIR$/month02/day12" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ftp_server">
+  <component name="RunManager" selected="Python.6-21_deadline">
     <configuration name="6-21_deadline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tedu_execises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,9 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.6-21_deadline" />
         <item itemvalue="Python.ftp_server" />
         <item itemvalue="Python.ftp_clent" />
-        <item itemvalue="Python.6-21_deadline" />
         <item itemvalue="Python.thread_event" />
         <item itemvalue="Python.thread_attr" />
       </list>
@@ -244,6 +243,7 @@
       <workItem from="1592135010504" duration="7922000" />
       <workItem from="1592230819155" duration="1481000" />
       <workItem from="1592317323510" duration="7732000" />
+      <workItem from="1592401169324" duration="1163000" />
     </task>
     <servers />
   </component>
@@ -275,28 +275,28 @@
     </state>
     <state x="883" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591350858019" />
     <state x="390" y="149" key="FileChooserDialogImpl/67.27.875.884@67.27.875.884" timestamp="1591842045122" />
-    <state width="1483" height="248" key="GridCell.Tab.0.bottom" timestamp="1592325059326">
+    <state width="1483" height="248" key="GridCell.Tab.0.bottom" timestamp="1592402332688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592325059326" />
+    <state width="1483" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592402332688" />
     <state width="1825" height="233" key="GridCell.Tab.0.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592307849584" />
     <state width="849" height="228" key="GridCell.Tab.0.bottom/67.27.875.884@67.27.875.884" timestamp="1592303430064" />
-    <state width="1483" height="248" key="GridCell.Tab.0.center" timestamp="1592325059326">
+    <state width="1483" height="248" key="GridCell.Tab.0.center" timestamp="1592402332688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592325059326" />
+    <state width="1483" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592402332688" />
     <state width="1825" height="233" key="GridCell.Tab.0.center/67.27.1851.900@67.27.1851.900" timestamp="1592307849582" />
     <state width="849" height="228" key="GridCell.Tab.0.center/67.27.875.884@67.27.875.884" timestamp="1592303430060" />
-    <state width="1483" height="248" key="GridCell.Tab.0.left" timestamp="1592325059326">
+    <state width="1483" height="248" key="GridCell.Tab.0.left" timestamp="1592402332688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592325059326" />
+    <state width="1483" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592402332688" />
     <state width="1825" height="233" key="GridCell.Tab.0.left/67.27.1851.900@67.27.1851.900" timestamp="1592307849579" />
     <state width="849" height="228" key="GridCell.Tab.0.left/67.27.875.884@67.27.875.884" timestamp="1592303430059" />
-    <state width="1483" height="248" key="GridCell.Tab.0.right" timestamp="1592325059326">
+    <state width="1483" height="248" key="GridCell.Tab.0.right" timestamp="1592402332688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592325059326" />
+    <state width="1483" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592402332688" />
     <state width="1825" height="233" key="GridCell.Tab.0.right/67.27.1851.900@67.27.1851.900" timestamp="1592307849583" />
     <state width="849" height="228" key="GridCell.Tab.0.right/67.27.875.884@67.27.875.884" timestamp="1592303430062" />
     <state width="849" height="256" key="GridCell.Tab.1.bottom" timestamp="1592300068957">
@@ -450,6 +450,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tedu_execises$ftp_clent.coverage" NAME="ftp_clent Coverage Results" MODIFIED="1592324917871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/month02/day15" />
+    <SUITE FILE_PATH="coverage/tedu_execises$6_21_deadline.coverage" NAME="6-21_deadline Coverage Results" MODIFIED="1592402084863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/month02" />
     <SUITE FILE_PATH="coverage/tedu_execises$ftp_server.coverage" NAME="ftp_server Coverage Results" MODIFIED="1592325012637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/month02/day15" />
   </component>
 </project>

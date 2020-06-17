@@ -157,11 +157,18 @@ def merge_ordered_list(left_half, right_half):
 
 # 12、用python程序实现快速排序。
 def partition(list_target, first, last):
-    bub_value = list_target[0]
+    bub_value = list_target[first]
     i, j = first + 1, last
-    while i <= j:
-        pass
-
+    while True:
+        while i <= j and list_target[i] <= bub_value:
+            i += 1
+        while i <= j and list_target[j] >= bub_value:
+            j -= 1
+        if i > j:
+            break
+        list_target[i], list_target[j] = list_target[j], list_target[i]
+    list_target[first], list_target[j] = list_target[j], list_target[first]
+    return j
 
 
 def quick_sort_helper(list_target, first, last):
@@ -181,5 +188,6 @@ if __name__ == '__main__':
     # selection_sort(list_target)
     # insert_sort(list_target)
     # shell_sort(list_target)
-    merge_sort(list_target)
+    # merge_sort(list_target)
+    quick_sort(list_target)
     print(list_target)
