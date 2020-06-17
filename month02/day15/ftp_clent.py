@@ -42,15 +42,19 @@ def put_file(sock, file_name):
     if not os.path.exists(file_name):
         print(f"{file_name}文件不存在！")
         return
+    sock.send(f"put {file_name}".encode())
+    msg = sock.recv(128).decode()
+    if msg == "false":
+        print(f"{file_name}文件已存在！")
+        return
     with open(file_name, "rb") as f:
         while True:
-            data = f.read(1024 * 1024)
+            data = f.read(1024)
             if not data:
+                time.sleep(0.1)
                 sock.send(b"##")
                 break
-            time.sleep(0.1)
             sock.send(data)
-
         msg = sock.recv(128).decode()
         if msg == "ok":
             print(f"{file_name}已上传完成。")
@@ -63,14 +67,19 @@ def main():
     sock.connect(ADDR)
     while True:
         init_view()
-        command = input("输入命令：")
-        sock.send(command.encode())
+        try:
+            command = input("输入命令：")
+        except KeyboardInterrupt:
+            command = "quit"
         if command == "quit":
+            sock.send(command.encode())
             sys.exit("已退出系统")
         elif command == "list":
+            sock.send(command.encode())
             data = sock.recv(1024).decode()
             print(data)
         elif command[:3] == "get":
+            sock.send(command.encode())
             file_name = command.split()[-1]
             get_file(sock, file_name)
         elif command[:3] == "put":

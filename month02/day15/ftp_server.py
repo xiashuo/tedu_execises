@@ -14,7 +14,7 @@ from threading import Thread
 import os, time
 
 ADDR = ("0.0.0.0", 8088)
-FILE_PATH = "D:/programing/PythonProjects/tedu_execises/mysql_data/"
+FILE_PATH = "/home/tarena/PycharmProjects/tedu_execises/mysql_data/"
 
 
 class Ftp_Server(Thread):
@@ -24,7 +24,11 @@ class Ftp_Server(Thread):
         super().__init__()
 
     def list_files(self):
-        list_files = os.listdir(FILE_PATH)
+        try:
+            list_files = os.listdir(FILE_PATH)
+        except FileNotFoundError:
+            self.connfd.send(f"不存在{FILE_PATH}这个目录".encode())
+            return
         data = "\n".join(list_files)
         self.connfd.send(data.encode())
 
@@ -37,15 +41,20 @@ class Ftp_Server(Thread):
                 while True:
                     data = f.read(1024 * 1024)
                     if not data:
+                        time.sleep(0.1)
                         self.connfd.send(b"##")
                         break
                     self.connfd.send(data)
-                    time.sleep(0.1)
+
 
     def put_file(self, file_name):
+        if os.path.exists(FILE_PATH+file_name):
+            self.connfd.send(b"false")
+            return
+        self.connfd.send(b"ok")
         with open(FILE_PATH+file_name, "wb") as f:
             while True:
-                data = self.connfd.recv(2048)
+                data = self.connfd.recv(1024)
                 if data == b"##":
                     self.connfd.send(b"ok")
                     break

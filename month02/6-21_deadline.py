@@ -104,9 +104,82 @@ def selection_sort(list_target):
         list_target[min_index], list_target[i] = list_target[i], list_target[min_index]
 
 
+# 10、用python程序实现希尔排序。
+def shell_sort(list_target):
+    gap = len(list_target) // 2
+    while gap > 0:
+        for i in range(gap):
+            gap_insert_sort(list_target, i, gap)
+        gap = gap // 2
+
+
+def gap_insert_sort(list_target, start, gap):
+    for i in range(start + gap, len(list_target), gap):
+        temp = list_target[i]
+        j = i
+        while j > start and temp < list_target[j - gap]:
+            list_target[j] = list_target[j - gap]
+            j -= gap
+        list_target[j] = temp
+
+
+# 11、用python程序实现归并排序。
+def merge_sort(list_target):
+    if len(list_target) == 1:
+        return
+    mid = len(list_target) // 2
+    left_half = list_target[:mid]
+    right_half = list_target[mid:]
+    merge_sort(left_half)
+    merge_sort(right_half)
+    list_target[:] = merge_ordered_list(left_half, right_half)
+
+
+def merge_ordered_list(left_half, right_half):
+    list_merge = []
+    i, j = 0, 0
+    while i < len(left_half) and j < len(right_half):
+        if left_half[i] < right_half[j]:
+            list_merge.append(left_half[i])
+            i += 1
+        else:
+            list_merge.append(right_half[j])
+            j += 1
+
+    while i < len(left_half):
+        list_merge.append(left_half[i])
+        i += 1
+    while j < len(right_half):
+        list_merge.append(right_half[j])
+        j += 1
+    return list_merge
+
+
+# 12、用python程序实现快速排序。
+def partition(list_target, first, last):
+    bub_value = list_target[0]
+    i, j = first + 1, last
+    while i <= j:
+        pass
+
+
+
+def quick_sort_helper(list_target, first, last):
+    if first < last:
+        split_point = partition(list_target, first, last)
+        quick_sort_helper(list_target, first, split_point - 1)
+        quick_sort_helper(list_target, split_point + 1, last)
+
+
+def quick_sort(list_target):
+    quick_sort_helper(list_target, 0, len(list_target) - 1)
+
+
 if __name__ == '__main__':
-    list_target = [4, 3, 2, 6, 5, 1]
-    # bubble_sort(list_target)
+    list_target = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    bubble_sort(list_target)
     # selection_sort(list_target)
     # insert_sort(list_target)
+    # shell_sort(list_target)
+    merge_sort(list_target)
     print(list_target)
