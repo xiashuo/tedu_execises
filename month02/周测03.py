@@ -36,11 +36,9 @@ def super_egg_drop(k, n):
     :return: 乐观估计 最少需要多少次能求出鸡蛋摔碎的层数
     '''
     dp = [[0 for _ in range(n + 1)] for _ in range(k + 1)]
-    print(dp)
     for i in range(1, k + 1):
         for step in range(1, n + 1):
             dp[i][step] = dp[i - 1][step - 1] + dp[i][step - 1] + 1
-            print(dp)
             if dp[k][step] >= n:
                 return step
 
@@ -107,4 +105,6 @@ if __name__ == '__main__':
     # print(more_than_half_num([1,1,2,2,3,2,2]))
     # print(egg_broken())
     # print(all_sum_n(15))
+    # print(super_egg_drop(2,100))
     max_len_substr("BDCABAABDCAABBC", "ABCBDAB")
+

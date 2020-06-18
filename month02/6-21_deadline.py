@@ -181,18 +181,39 @@ def quick_sort_helper(list_target, first, last):
 def quick_sort(list_target):
     quick_sort_helper(list_target, 0, len(list_target) - 1)
 
-# 13、用python程序实现堆排序。
-def heap_adjust(list_target):
-    s=
 
+# 13、用python程序实现堆排序。
+def heap_adjust(list_target, s, m):
+    temp = list_target[s-1]
+    i = 2 * s
+    while i <= m:
+        if i < m and list_target[i-1] < list_target[i]:
+            i += 1
+        if list_target[i-1] <= temp:
+            break
+        list_target[s-1] = list_target[i-1]
+        s = i
+        i *= 2
+    list_target[s-1] = temp
+
+
+def heap_sort(list_target):
+    lenth = len(list_target)
+    for i in range(lenth // 2, 0, -1):
+        heap_adjust(list_target, i, lenth)
+
+    for j in range(lenth, 1, -1):
+        list_target[j-1], list_target[0] = list_target[0], list_target[j-1]
+        heap_adjust(list_target, 1, j-1)
 
 
 if __name__ == '__main__':
     list_target = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-    bubble_sort(list_target)
+    # bubble_sort(list_target)
     # selection_sort(list_target)
     # insert_sort(list_target)
     # shell_sort(list_target)
     # merge_sort(list_target)
-    quick_sort(list_target)
+    # quick_sort(list_target)
+    heap_sort(list_target)
     print(list_target)
