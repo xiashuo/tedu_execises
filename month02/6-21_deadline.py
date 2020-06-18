@@ -181,6 +181,11 @@ def quick_sort_helper(list_target, first, last):
 def quick_sort(list_target):
     quick_sort_helper(list_target, 0, len(list_target) - 1)
 
+# 13、用python程序实现堆排序。
+def heap_adjust(list_target):
+    s=
+
+
 
 if __name__ == '__main__':
     list_target = [54, 26, 93, 17, 77, 31, 44, 55, 20]
