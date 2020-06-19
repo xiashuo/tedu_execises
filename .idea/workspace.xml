@@ -50,20 +50,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/month02" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/month02/day17" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
+  </component>
+  <component name="PyDebuggerOptionsProvider">
+    <option name="mySupportQtDebugging" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programing\PythonProjects\tedu_execises\month02" />
+      <recent name="D:\programing\PythonProjects\tedu_execises\month01\day18\homework" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/month02/day17" />
       <recent name="$PROJECT_DIR$/month02" />
       <recent name="D:\programing\PythonProjects\tedu_execises\month02\day15" />
       <recent name="$PROJECT_DIR$/month02/day15" />
       <recent name="$PROJECT_DIR$/month02/day14" />
-      <recent name="D:\programing\PythonProjects\tedu_execises\month02\day13" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\programing\PythonProjects\tedu_execises\month02" />
-      <recent name="D:\programing\PythonProjects\tedu_execises\month01\day18\homework" />
     </key>
   </component>
   <component name="RunManager" selected="Python.6-21_deadline">
@@ -111,28 +114,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ftp_clent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="tedu_execises" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month02/day15" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day15/ftp_clent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ftp_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tedu_execises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="thread_event" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="http_test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tedu_execises" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,12 +144,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month02/day14" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month02/day17" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day14/thread_event.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day17/http_test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="web_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tedu_execises" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month02/day17" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day17/web_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,10 +181,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.6-21_deadline" />
+        <item itemvalue="Python.web_server" />
+        <item itemvalue="Python.http_test1" />
         <item itemvalue="Python.周测03" />
         <item itemvalue="Python.ftp_server" />
-        <item itemvalue="Python.ftp_clent" />
-        <item itemvalue="Python.thread_event" />
       </list>
     </recent_temporary>
   </component>
@@ -277,59 +278,59 @@
     </state>
     <state x="883" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591350858019" />
     <state x="390" y="149" key="FileChooserDialogImpl/67.27.875.884@67.27.875.884" timestamp="1591842045122" />
-    <state width="1483" height="248" key="GridCell.Tab.0.bottom" timestamp="1592496180240">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1825" height="255" key="GridCell.Tab.0.bottom" timestamp="1592570771350">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="227" key="GridCell.Tab.0.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592460565427" />
-    <state width="849" height="227" key="GridCell.Tab.0.bottom/67.27.875.884@67.27.875.884" timestamp="1592448841335" />
-    <state width="1483" height="248" key="GridCell.Tab.0.center" timestamp="1592496180240">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1825" height="255" key="GridCell.Tab.0.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592570771350" />
+    <state width="849" height="255" key="GridCell.Tab.0.bottom/67.27.875.884@67.27.875.884" timestamp="1592570389880" />
+    <state width="1825" height="255" key="GridCell.Tab.0.center" timestamp="1592570771350">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="227" key="GridCell.Tab.0.center/67.27.1851.900@67.27.1851.900" timestamp="1592460565420" />
-    <state width="849" height="227" key="GridCell.Tab.0.center/67.27.875.884@67.27.875.884" timestamp="1592448841333" />
-    <state width="1483" height="248" key="GridCell.Tab.0.left" timestamp="1592496180240">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1825" height="255" key="GridCell.Tab.0.center/67.27.1851.900@67.27.1851.900" timestamp="1592570771350" />
+    <state width="849" height="255" key="GridCell.Tab.0.center/67.27.875.884@67.27.875.884" timestamp="1592570389879" />
+    <state width="1825" height="255" key="GridCell.Tab.0.left" timestamp="1592570771338">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="227" key="GridCell.Tab.0.left/67.27.1851.900@67.27.1851.900" timestamp="1592460565416" />
-    <state width="849" height="227" key="GridCell.Tab.0.left/67.27.875.884@67.27.875.884" timestamp="1592448841332" />
-    <state width="1483" height="248" key="GridCell.Tab.0.right" timestamp="1592496180240">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1825" height="255" key="GridCell.Tab.0.left/67.27.1851.900@67.27.1851.900" timestamp="1592570771338" />
+    <state width="849" height="255" key="GridCell.Tab.0.left/67.27.875.884@67.27.875.884" timestamp="1592570389879" />
+    <state width="1825" height="255" key="GridCell.Tab.0.right" timestamp="1592570771350">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="227" key="GridCell.Tab.0.right/67.27.1851.900@67.27.1851.900" timestamp="1592460565423" />
-    <state width="849" height="227" key="GridCell.Tab.0.right/67.27.875.884@67.27.875.884" timestamp="1592448841333" />
-    <state width="1825" height="262" key="GridCell.Tab.1.bottom" timestamp="1592452723348">
+    <state width="1825" height="255" key="GridCell.Tab.0.right/67.27.1851.900@67.27.1851.900" timestamp="1592570771350" />
+    <state width="849" height="255" key="GridCell.Tab.0.right/67.27.875.884@67.27.875.884" timestamp="1592570389879" />
+    <state width="1825" height="255" key="GridCell.Tab.1.bottom" timestamp="1592570771240">
       <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="713" height="201" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591362306594" />
-    <state width="1825" height="262" key="GridCell.Tab.1.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592452723348" />
-    <state width="849" height="256" key="GridCell.Tab.1.bottom/67.27.875.884@67.27.875.884" timestamp="1592300068957" />
-    <state width="1825" height="262" key="GridCell.Tab.1.center" timestamp="1592452723342">
+    <state width="1825" height="255" key="GridCell.Tab.1.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592570771240" />
+    <state width="849" height="255" key="GridCell.Tab.1.bottom/67.27.875.884@67.27.875.884" timestamp="1592535411811" />
+    <state width="1825" height="255" key="GridCell.Tab.1.center" timestamp="1592570771240">
       <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="713" height="201" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591362306594" />
-    <state width="1825" height="262" key="GridCell.Tab.1.center/67.27.1851.900@67.27.1851.900" timestamp="1592452723342" />
-    <state width="849" height="256" key="GridCell.Tab.1.center/67.27.875.884@67.27.875.884" timestamp="1592300068949" />
-    <state width="1825" height="262" key="GridCell.Tab.1.left" timestamp="1592452723340">
+    <state width="1825" height="255" key="GridCell.Tab.1.center/67.27.1851.900@67.27.1851.900" timestamp="1592570771240" />
+    <state width="849" height="255" key="GridCell.Tab.1.center/67.27.875.884@67.27.875.884" timestamp="1592535411809" />
+    <state width="1825" height="255" key="GridCell.Tab.1.left" timestamp="1592570771239">
       <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="713" height="201" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591362306594" />
-    <state width="1825" height="262" key="GridCell.Tab.1.left/67.27.1851.900@67.27.1851.900" timestamp="1592452723340" />
-    <state width="849" height="256" key="GridCell.Tab.1.left/67.27.875.884@67.27.875.884" timestamp="1592300068946" />
-    <state width="1825" height="262" key="GridCell.Tab.1.right" timestamp="1592452723345">
+    <state width="1825" height="255" key="GridCell.Tab.1.left/67.27.1851.900@67.27.1851.900" timestamp="1592570771239" />
+    <state width="849" height="255" key="GridCell.Tab.1.left/67.27.875.884@67.27.875.884" timestamp="1592535411809" />
+    <state width="1825" height="255" key="GridCell.Tab.1.right" timestamp="1592570771240">
       <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="713" height="201" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591362306594" />
-    <state width="1825" height="262" key="GridCell.Tab.1.right/67.27.1851.900@67.27.1851.900" timestamp="1592452723345" />
-    <state width="849" height="256" key="GridCell.Tab.1.right/67.27.875.884@67.27.875.884" timestamp="1592300068953" />
-    <state x="781" y="136" key="SettingsEditor" timestamp="1591605612822">
+    <state width="1825" height="255" key="GridCell.Tab.1.right/67.27.1851.900@67.27.1851.900" timestamp="1592570771240" />
+    <state width="849" height="255" key="GridCell.Tab.1.right/67.27.875.884@67.27.875.884" timestamp="1592535411810" />
+    <state x="781" y="136" key="SettingsEditor" timestamp="1592570871491">
       <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state x="292" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589783064670" />
-    <state x="781" y="136" key="SettingsEditor/67.27.1851.900@67.27.1851.900" timestamp="1591605612822" />
+    <state x="781" y="136" key="SettingsEditor/67.27.1851.900@67.27.1851.900" timestamp="1592570871491" />
     <state x="67" y="27" key="SettingsEditor/67.27.875.884@67.27.875.884" timestamp="1591601956312" />
     <state x="806" y="95" width="714" height="655" key="StructurePopup" timestamp="1589782115098">
       <screen x="0" y="0" width="1536" height="824" />
@@ -449,14 +450,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/month02/周测03.py</url>
-          <line>69</line>
+          <line>92</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/month02/周测03.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/month02/6-21_deadline.py</url>
+          <line>215</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tedu_execises$03.coverage" NAME="周测03 Coverage Results" MODIFIED="1592487593335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/month02" />
-    <SUITE FILE_PATH="coverage/tedu_execises$6_21_deadline.coverage" NAME="6-21_deadline Coverage Results" MODIFIED="1592496139200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/month02" />
   </component>
 </project>

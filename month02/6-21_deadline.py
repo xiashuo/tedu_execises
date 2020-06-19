@@ -184,17 +184,17 @@ def quick_sort(list_target):
 
 # 13、用python程序实现堆排序。
 def heap_adjust(list_target, s, m):
-    temp = list_target[s-1]
+    temp = list_target[s - 1]
     i = 2 * s
     while i <= m:
-        if i < m and list_target[i-1] < list_target[i]:
+        if i < m and list_target[i - 1] < list_target[i]:
             i += 1
-        if list_target[i-1] <= temp:
+        if list_target[i - 1] <= temp:
             break
-        list_target[s-1] = list_target[i-1]
+        list_target[s - 1] = list_target[i - 1]
         s = i
         i *= 2
-    list_target[s-1] = temp
+    list_target[s - 1] = temp
 
 
 def heap_sort(list_target):
@@ -203,8 +203,24 @@ def heap_sort(list_target):
         heap_adjust(list_target, i, lenth)
 
     for j in range(lenth, 1, -1):
-        list_target[j-1], list_target[0] = list_target[0], list_target[j-1]
-        heap_adjust(list_target, 1, j-1)
+        list_target[j - 1], list_target[0] = list_target[0], list_target[j - 1]
+        heap_adjust(list_target, 1, j - 1)
+
+
+# 14、用python程序实现桶排序。
+# 桶的个数为：(maxnum-mininum)//len(list_target)+1
+# 映射规则为：index=(x-mininum)//len(list_target)
+def bucketSort(list_target):
+    maxinum, mininum = max(list_target), min(list_target)
+    length = len(list_target)
+    bucketArr = [[] for i in range((maxinum - mininum) // length + 1)]
+    for i in list_target:
+        index = (i - mininum) // length
+        bucketArr[index].append(i)
+    list_target.clear()
+    for bucket in bucketArr:
+        bucket.sort()
+        list_target.extend(i)
 
 
 if __name__ == '__main__':
@@ -215,5 +231,6 @@ if __name__ == '__main__':
     # shell_sort(list_target)
     # merge_sort(list_target)
     # quick_sort(list_target)
-    heap_sort(list_target)
+    # heap_sort(list_target)
+    bubble_sort(list_target)
     print(list_target)

@@ -43,6 +43,29 @@ def super_egg_drop(k, n):
                 return step
 
 
+# 递归
+def throw_eggs(k, n):
+    if k == 0 or n == 0:
+        return 0
+    if k == 1:
+        return n
+    if n == 1:
+        return 1
+    low, high = 1, n
+    while low + 1 < high:
+        mid = (low + high) // 2
+        left_times = throw_eggs(k - 1, mid - 1)
+        right_times = throw_eggs(k, n - mid)
+        if left_times < right_times:
+            low = mid
+        elif left_times > right_times:
+            high = mid
+        else:
+            low=high=mid
+    times = max(throw_eggs(k - 1, high - 1), throw_eggs(k, n - high)) + 1
+    return times
+
+
 # 解为14，也就是从14楼开始扔鸡蛋，如果碎了，说明高了，则从第一层刚开始
 # 逐层递增，直到第二个蛋碎为止，最多14次；如果第一个蛋没碎，则按照13,12,11，
 # 。。2,1的规律逐渐增加楼层，直到第一个蛋碎，然后再从上一次扔鸡蛋的
@@ -103,8 +126,11 @@ def max_len_substr(str1, str2):
 
 if __name__ == '__main__':
     # print(more_than_half_num([1,1,2,2,3,2,2]))
-    # print(egg_broken())
+    print(super_egg_drop(2, 100))
+    import time
+    start_time=time.time()
+    print(throw_eggs(2, 100))
+    end_time=time.time()
+    print(f"耗时：{end_time-start_time}s")
     # print(all_sum_n(15))
-    # print(super_egg_drop(2,100))
-    max_len_substr("BDCABAABDCAABBC", "ABCBDAB")
-
+    # max_len_substr("BDCABAABDCAABBC", "ABCBDAB")
