@@ -213,14 +213,43 @@ def heap_sort(list_target):
 def bucketSort(list_target):
     maxinum, mininum = max(list_target), min(list_target)
     length = len(list_target)
-    bucketArr = [[] for i in range((maxinum - mininum) // length + 1)]
+    bucket_arr = [[] for i in range((maxinum - mininum) // length + 1)]
     for i in list_target:
         index = (i - mininum) // length
-        bucketArr[index].append(i)
+        bucket_arr[index].append(i)
     list_target.clear()
-    for bucket in bucketArr:
+    for bucket in bucket_arr:
         bucket.sort()
-        list_target.extend(i)
+        list_target.extend(bucket)
+
+
+# 15、用python程序实现基数排序。
+# 从右边起（个、十、百、。。。），获取数字的第i位
+def get_digit_i(number, i):
+    num_str = str(number)
+    if i > len(num_str):
+        return 0
+    else:
+        return int(num_str[-i])
+
+
+def radix_sort(list_target):
+    bucket_arr = [[] for _ in range(10)]
+    # 获取最大值的长度，即一共有多少位数，则后面就需要循环操作几次
+    length = len(str(max(list_target)))
+    # 从右边开始，按照个位、十位、百位。。。的顺序进行循环操作。
+    for i in range(1, length + 1):
+        # 根据当前位数，将所有数字放入相应的桶中。
+        for val in list_target:
+            index = get_digit_i(val, i)
+            bucket_arr[index].append(val)
+        # 放所有数据按照顺序从桶中取出来放到list_target中
+        list_target.clear()
+        for bucket in bucket_arr:
+            list_target.extend(bucket)
+        # 清空所有桶
+        for bucket in bucket_arr:
+            bucket.clear()
 
 
 if __name__ == '__main__':
@@ -232,5 +261,7 @@ if __name__ == '__main__':
     # merge_sort(list_target)
     # quick_sort(list_target)
     # heap_sort(list_target)
-    bubble_sort(list_target)
+    # bubble_sort(list_target)
+    radix_sort(list_target)
     print(list_target)
+
