@@ -39,9 +39,9 @@ def super_egg_drop(k, n):
     for i in range(1, k + 1):
         for step in range(1, n + 1):
             dp[i][step] = dp[i - 1][step - 1] + dp[i][step - 1] + 1
-            if dp[k][step] >= n:
-                return step
-
+            # if dp[k][step] >= n:
+            #     return step
+    return dp[k][n]
 
 # 递归
 def throw_eggs(k, n):
@@ -126,11 +126,13 @@ def max_len_substr(str1, str2):
 
 if __name__ == '__main__':
     # print(more_than_half_num([1,1,2,2,3,2,2]))
-    print(super_egg_drop(2, 100))
-    import time
-    start_time=time.time()
-    print(throw_eggs(2, 100))
-    end_time=time.time()
-    print(f"耗时：{end_time-start_time}s")
+    # print(f"{8}个蛋，{7}次：{super_egg_drop(8, 7)}")
+    # import time
+    # start_time=time.time()
+    # print(throw_eggs(2, 100))
+    # end_time=time.time()
+    # print(f"耗时：{end_time-start_time}s")
     # print(all_sum_n(15))
-    # max_len_substr("BDCABAABDCAABBC", "ABCBDAB")
+    max_len_substr("BDCABAABDCAABBC", "ABCBDAB")
+
+

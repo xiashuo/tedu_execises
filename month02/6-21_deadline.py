@@ -173,9 +173,20 @@ def partition(list_target, first, last):
 
 def quick_sort_helper(list_target, first, last):
     if first < last:
-        split_point = partition(list_target, first, last)
-        quick_sort_helper(list_target, first, split_point - 1)
-        quick_sort_helper(list_target, split_point + 1, last)
+        # split_point = partition(list_target, first, last)
+        bub_value = list_target[first]
+        i, j = first + 1, last
+        while True:
+            while i <= j and list_target[i] <= bub_value:
+                i += 1
+            while i <= j and list_target[j] >= bub_value:
+                j -= 1
+            if i > j:
+                break
+            list_target[i], list_target[j] = list_target[j], list_target[i]
+        list_target[first], list_target[j] = list_target[j], list_target[first]
+        quick_sort_helper(list_target, first, j - 1)
+        quick_sort_helper(list_target, j + 1, last)
 
 
 def quick_sort(list_target):
@@ -259,9 +270,9 @@ if __name__ == '__main__':
     # insert_sort(list_target)
     # shell_sort(list_target)
     # merge_sort(list_target)
-    # quick_sort(list_target)
+    quick_sort(list_target)
     # heap_sort(list_target)
     # bubble_sort(list_target)
-    radix_sort(list_target)
+    # radix_sort(list_target)
     print(list_target)
 
