@@ -205,10 +205,13 @@ FROM Course LEFT JOIN Score ON Course.c_id=Score.c_id
 GROUP BY Course.c_id,Course.c_name;
 
 -- 18 查询学生的总成绩并进行排名
-SELECT Student.s_id,Student.s_name,sum(s_score)
-FROM Student LEFT JOIN Score on Student.s_id=Score.s_id
-GROUP BY Student.s_id,Student.s_name
-ORDER BY sum(s_score) DESC;
+SELECT c.*,@i:=@i+1 排名
+from(
+    SELECT Student.s_id 学号,Student.s_name 姓名,sum(s_score) 总成绩
+    FROM Student LEFT JOIN Score on Student.s_id=Score.s_id
+    GROUP BY Student.s_id,Student.s_name
+    ORDER BY sum(s_score) DESC
+) c,(select @i:=0) d;
 
 -- 19查询不同老师所教不同课程平均分从高到低显示
 SELECT Teacher.t_id 教师编号,Teacher.t_name 姓名,Course.c_name 课程名,avg(s_score) 平均分
