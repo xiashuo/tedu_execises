@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="time" style="color: red;"></h1>
+    <script>
+        function get_time() {
+            var timestamp = new Date().getTime();
+            var tomorrow= new Date(new Date().toLocaleDateString()).getTime()+60*60*24*1000
+            // var tomorrow = new Date('2020-7-10 00:00:00').getTime()
+            var hour = Math.floor((tomorrow - timestamp) / (60 * 60 * 1000));
+            var minute = Math.floor((tomorrow - timestamp) % (60 * 60 * 1000) / (1000 * 60))
+            var second = Math.floor((tomorrow - timestamp) / 1000 - hour * 3600 - minute * 60)
+
+            var show_time = document.getElementById('time')
+            show_time.innerHTML = "距离下一天还有：" + hour + "小时 " + minute + "分钟 " + second + "秒"
+        }
+        setInterval(get_time,1);
+
+    </script>
+</body>
+
+</html>
