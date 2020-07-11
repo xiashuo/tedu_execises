@@ -72,7 +72,7 @@ class WebServer:
     # 组织数据给客户端回复
     def get_html(self, connfd, info):
         if info == "/":
-            filename = self.html + "/index.html"
+            filename = self.html + "/index_bak.html"
         else:
             filename = self.html + info
 

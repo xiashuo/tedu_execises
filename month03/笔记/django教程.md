@@ -9,6 +9,8 @@
     3. 学习阶段注重框架使用，工作阶段注重实现业务逻辑
     4. 综合应用强，小练习少
 
+# day01
+
 ## Django框架的介绍
 
 ### 起源&现状
@@ -625,7 +627,7 @@ request.POST['参数名']  # request.POST 绑定QueryDict
     - V 视图层(View), 用于向用户展示结果
     - C 控制(Controller ，用于处理请求、获取数据、返回结果(重要)
   - MVC模式如图:
-    ![](D:/用户目录/下载/day02-note/day02/images/mvc.png)
+    ![](images/mvc.png)
 - MTV 模式
   MTV 代表 Model-Template-View（模型-模板-视图） 模式。这种模式用于应用程序的分层开发
   - 作用: 
@@ -635,7 +637,7 @@ request.POST['参数名']  # request.POST 绑定QueryDict
     - T -- 模板层(Template)  负责呈现内容到浏览器
     - V -- 视图层(View)  是核心，负责接收请求、获取数据、返回结果
   - MTV模式如图:
-    ![](D:/用户目录/下载/day02-note/day02/images/mtv.png)
+    ![](images/mtv.png)
 
 ## 模板 Templates
 
@@ -966,7 +968,7 @@ http://127.0.0.1:8000/test_html?t=<script>alert(11)</script>
 
 - 模板的继承示例:
 
-  - ![](D:/用户目录/下载/day02-note/day02/images/template_inherit.png)
+  - ![](images/template_inherit.png)
 
 ### url 反向解析
 
@@ -1005,6 +1007,29 @@ http://127.0.0.1:8000/test_html?t=<script>alert(11)</script>
     ```
 
     **同名找最合适的【参数一致的】；参数一致时，找最后一个；**
+  
+- 总结：书写url的地方
+  
+  1. 模板中 - a标签 src=url
+2. 模板中 - form action=url
+  3. 模板中 - 图片加载 js加载 - img src=url ？
+  4. 视图函数 - 302跳转 HttpResponseRedirect(url)
+
+  url 格式：
+
+  1. 相对地址
+  
+     浏览器 地址栏 - 当前地址
+  
+     地址栏：http://127.0.0.1:8000/base_index
+  
+     HTML -> <a src='/music_index'/>
+  
+     浏览器视角：'/'开头的地址，把当前地址栏中的 协议+ip+端口+'/'开头地址 拼接出最终访问地址
+  
+     http://127.0.0.1:8000/music_index
+  
+  2. 绝对地址   http://127.0.0.1:8000/music_index
 
 - 练习:
 
