@@ -3,13 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month02/day17/web_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/month02/day17/web_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month03/笔记/django教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/month03/笔记/django教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/中期项目/数据库设计-部分表.md" beforeDir="false" afterPath="$PROJECT_DIR$/中期项目/数据库设计-部分表.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/中期项目/功能模块需求.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/中期项目/数据库设计+功能需求.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,23 +65,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/month03/django/day03/mysite3/news/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/month03/django/day04" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySupportQtDebugging" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programing\PythonProjects\tedu_execises\month02" />
+      <recent name="D:\programing\PythonProjects\tedu_execises\month01\day18\homework" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/month03/django/day04" />
       <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/news/templates" />
       <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/static/iamges" />
       <recent name="$PROJECT_DIR$/month03/django/day03" />
       <recent name="$PROJECT_DIR$/month03/django" />
-      <recent name="$PROJECT_DIR$/month03" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\programing\PythonProjects\tedu_execises\month02" />
-      <recent name="D:\programing\PythonProjects\tedu_execises\month01\day18\homework" />
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">

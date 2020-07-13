@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block mytitle %}
+    <title>base</title>
+    {% endblock %}
+</head>
+<body>
+<a href="/base_index">首页</a>
+<a href="{% url 'mi' %}">音乐频道</a>
+<br><br>
+{% block info %}
+    这是父模板
+{% endblock %}
+
+<br><br>
+<h3>我们的使命是xxx</h3>
+</body>
+</html>
