@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day02/mysite2/mysite2/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite2/mysite2/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/month03/django/day03/mysite3/mysite3/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month03/笔记/django教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/month03/笔记/django教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/中期项目/功能模块需求.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/中期项目/数据库设计+功能需求.md" beforeDir="false" />
-    </list>
+    <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +102,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day18/online_dict/dict_client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -140,6 +124,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day17/http_test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -161,6 +146,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month03/django/day01/mysite1/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -182,6 +168,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day17/web_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -260,6 +247,7 @@
       <workItem from="1592317323510" duration="7732000" />
       <workItem from="1592401169324" duration="1163000" />
       <workItem from="1592486047050" duration="7037000" />
+      <workItem from="1594734383708" duration="143000" />
     </task>
     <servers />
   </component>
