@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改页面</title>
+</head>
+<body>
+<form action="{{ book.id }}" method="post" style="border:1px solid;text-align:center;width:400px">
+    <p>
+        title: <input type="text" disabled="disabled" value="{{ book.title }}">
+    </p>
+    <p>
+        pub: <input type="text" disabled="disabled" value="{{ book.pub }}"><br>
+    </p>
+    <p>
+        price: <input type="text" name="price" value="{{ book.price }}"><br>
+    </p>
+    <p>
+        market_price: <input type="text" name="market_price" value="{{ book.market_price }}">
+    </p>
+    <input type="submit" value="提交更新">
+    
+</form>
+</body>
+</html>

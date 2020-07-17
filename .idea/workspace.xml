@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="" />
+    <list default="true" id="1ea9489d-4ebe-48a0-b5dd-c2baa8ed69e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month03/笔记/django教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/month03/笔记/django教程.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -48,26 +51,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/month03/django/day04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/month03/django/day06" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySupportQtDebugging" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/month03/django/day06" />
+      <recent name="$PROJECT_DIR$/month03/django/day06/wiki_note/user/templates/user" />
+      <recent name="$PROJECT_DIR$/month03/django/day04" />
+      <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/news/templates" />
+      <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/static/iamges" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\programing\PythonProjects\tedu_execises\month02" />
       <recent name="D:\programing\PythonProjects\tedu_execises\month01\day18\homework" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/month03/django/day04" />
-      <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/news/templates" />
-      <recent name="$PROJECT_DIR$/month03/django/day03/mysite3/static/iamges" />
-      <recent name="$PROJECT_DIR$/month03/django/day03" />
-      <recent name="$PROJECT_DIR$/month03/django" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.test">
     <configuration name="6-21_deadline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tedu_execises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,28 +115,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="http_test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="tedu_execises" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month02/day17" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month02/day17/http_test1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tedu_execises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,6 +129,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month03/django/day01/mysite1/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tedu_execises" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/month03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/month03/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.dict_client" />
         <item itemvalue="Python.6-21_deadline" />
         <item itemvalue="Python.web_server" />
-        <item itemvalue="Python.http_test1" />
       </list>
     </recent_temporary>
   </component>
@@ -280,29 +282,29 @@
     <state x="883" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591350858019" />
     <state x="750" y="151" key="FileChooserDialogImpl/67.27.1851.900@67.27.1851.900" timestamp="1594347438839" />
     <state x="390" y="149" key="FileChooserDialogImpl/67.27.875.884@67.27.875.884" timestamp="1591842045122" />
-    <state width="849" height="215" key="GridCell.Tab.0.bottom" timestamp="1594197818839">
-      <screen x="67" y="27" width="875" height="884" />
+    <state width="1825" height="220" key="GridCell.Tab.0.bottom" timestamp="1594811442090">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="221" key="GridCell.Tab.0.bottom/67.27.1851.900@67.27.1851.900" timestamp="1592623805837" />
+    <state width="1825" height="220" key="GridCell.Tab.0.bottom/67.27.1851.900@67.27.1851.900" timestamp="1594811442090" />
     <state width="849" height="215" key="GridCell.Tab.0.bottom/67.27.875.884@67.27.875.884" timestamp="1594197818839" />
-    <state width="849" height="215" key="GridCell.Tab.0.center" timestamp="1594197818838">
-      <screen x="67" y="27" width="875" height="884" />
+    <state width="1825" height="220" key="GridCell.Tab.0.center" timestamp="1594811442085">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="221" key="GridCell.Tab.0.center/67.27.1851.900@67.27.1851.900" timestamp="1592623805837" />
+    <state width="1825" height="220" key="GridCell.Tab.0.center/67.27.1851.900@67.27.1851.900" timestamp="1594811442085" />
     <state width="849" height="215" key="GridCell.Tab.0.center/67.27.875.884@67.27.875.884" timestamp="1594197818838" />
-    <state width="849" height="215" key="GridCell.Tab.0.left" timestamp="1594197818837">
-      <screen x="67" y="27" width="875" height="884" />
+    <state width="1825" height="220" key="GridCell.Tab.0.left" timestamp="1594811442084">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="221" key="GridCell.Tab.0.left/67.27.1851.900@67.27.1851.900" timestamp="1592623805836" />
+    <state width="1825" height="220" key="GridCell.Tab.0.left/67.27.1851.900@67.27.1851.900" timestamp="1594811442084" />
     <state width="849" height="215" key="GridCell.Tab.0.left/67.27.875.884@67.27.875.884" timestamp="1594197818837" />
-    <state width="849" height="215" key="GridCell.Tab.0.right" timestamp="1594197818838">
-      <screen x="67" y="27" width="875" height="884" />
+    <state width="1825" height="220" key="GridCell.Tab.0.right" timestamp="1594811442086">
+      <screen x="67" y="27" width="1851" height="900" />
     </state>
     <state width="1483" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592496180240" />
-    <state width="1825" height="221" key="GridCell.Tab.0.right/67.27.1851.900@67.27.1851.900" timestamp="1592623805837" />
+    <state width="1825" height="220" key="GridCell.Tab.0.right/67.27.1851.900@67.27.1851.900" timestamp="1594811442086" />
     <state width="849" height="215" key="GridCell.Tab.0.right/67.27.875.884@67.27.875.884" timestamp="1594197818838" />
     <state width="1825" height="255" key="GridCell.Tab.1.bottom" timestamp="1592623708339">
       <screen x="67" y="27" width="1851" height="900" />

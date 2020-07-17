@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_html</title>
+</head>
+<body>
+<h1>{{ int }}</h1>
+{% if int > 10 %}
+int小于10
+<br>
+{% endif %}
+
+{% for name in list %}
+    {% if forloop.first %} <p>==============</p> {% endif %}
+    {{ forloop.counter }}:{{ name }}<br>
+    {% empty %}
+        数据为空！
+{% endfor %}
+</body>
+</html>
